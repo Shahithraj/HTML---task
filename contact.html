@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-form</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right top, #9b89b3, #e384af, #ff8b79, #ffb62a, #a8eb12);
+       /* background-repeat: no-repeat; */
+       /* background-size: cover; */
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+label::after{
+    content:"*";
+    color:red;
+}
+no:after{
+    content:"";
+}
+    </style>
+</head>
+<body>
+    <form class="id">
+    <div class="container">
+    <h3>Contact-us form</h3>
+   
+    <label for="username">Firstname</label> <br>
+    <input type="text" placeholder="Your name" id=""  required>
+    <br><br>
+    
+    <label for=""> Last Name</label><br>
+    <input type="text" placeholder="Your last name"  required><br><br>
+    
+    <label for=""> Email ID</label><br>
+    <input type="email" name="email" placeholder="Enter your email id"  required>
+   <br><br>
+    <label for="">Mobile No</label>
+     <br>
+    <input type="password" placeholder="Enter  your number"  required >
+    <br><br>
+    <label for="Gender">Gender</label>
+    <input type="radio" name="Gender" id="" required> Male
+    <input type="radio" name="Gender" id=""> Female
+    <input type="radio" name="Gender" id=""> Other
+    <br><br>
+    <!-- dropdown -->
+    <label for="username">Country</label> <br>
+     <select name="country" id="username" multiple required>
+         <option value="" >Please choosean option</option>
+     <option value="">India</option>
+     <option value="">Sri Lanka</option>
+     <option value="">Bangladesh</option>
+     <option value="">Pakistan</option>
+     <option value="">Afgan</option>
+     </select>
+     <br><br>
+     <label for="">State</label><br>
+     <select name="country" id="" required>
+        
+    <option value="">Tamil Nadu</option>
+    <option value="">Kerala</option>
+    <option value="">Andhra</option>
+    <option value="">Karnataka</option>
+    </select>
+     <br><br>
+     <label class="no" for="">Please Comment here</label><br>
+     <textarea name="" id="" cols="10" rows="10" placeholder="what's on your mind" required> </textarea>
+     <br><br>
+    
+     <input type="checkbox" required> 
+     <label class="no" for="">I agree to all the terms and conditions</label>
+     <br><br>
+    <button>Submit</button>
+    </form>
+    </div>
+</body>
+</html>
